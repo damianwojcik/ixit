@@ -1,0 +1,139 @@
+.featured-box
+	display: block
+	background-color: #FFF
+	+background_img
+	width: 100%
+	height: 370px
+	padding: 45px
+	+transition(all 0.4s ease-in-out)
+	z-index: 999
+	+large-desktop
+		padding: 40px
+	+medium-handset
+		padding: 35px
+		height: 320px
+	+medium-mobile
+		padding: 30px
+		height: 280px
+
+	&:hover
+		-webkit-transform: scale(1.05)
+		transform: scale(1.05)
+
+	&.featured-box--black
+		background-color: #1A1A1A
+
+	.wrap
+		height: 223px
+		overflow: hidden
+		margin-bottom: 20px
+		+large-desktop
+			height: 234px
+		+medium-handset
+			height: 192px
+			.contact-intro
+				display: none
+		+medium-mobile
+			height: 165px
+
+	h2
+		font-family: $oswald
+		text-transform: uppercase
+		color: $orange
+		font-size: 0.9em
+		line-height: 1
+		margin-bottom: 18px
+		font-weight: normal
+		+medium-mobile
+			margin-bottom: 15px
+
+	h3
+		font-family: $oswald
+		text-transform: uppercase
+		line-height: 1.2
+		font-size: 1.9em
+		color: #FFF
+		margin-bottom: 20px
+		+medium-mobile
+			font-size: 1.7em
+			margin-bottom: 15px
+
+	p
+		font-family: $pt_serif
+		font-size: 1em
+		font-style: italic
+		color: #858585
+		line-height: 1.4
+		
+	time
+		font-size: 1em
+		font-style: italic
+		font-family: $pt_serif
+		line-height: 1
+		margin-bottom: 30px
+		color: #b6caf4
+		display: block
+		+medium-mobile
+			margin-bottom: 20px
+
+	blockquote
+		font-size: 1.5em
+		line-height: 1.2
+		font-family: $pt_serif
+		color: #FFF
+		margin: 0
+		padding: 0
+		display: block
+		font-style: italic
+		+medium-mobile
+			font-size: 1.3em
+
+	.text-wrap
+		width: 45%
+		float: left
+		+large-desktop
+			width: 100%
+			float: none
+		+small-tablet
+			width: 50%
+			float: left
+		+medium-handset
+			float: none
+			width: 100%
+
+	img.featured-box-img
+		position: absolute
+		right: 5px
+		top: 0
+		height: 360px
+		max-width: 55%
+		+large-desktop
+			display: none
+		+small-tablet
+			display: block
+			max-width: 50%
+		+medium-handset
+			display: block
+			width: 90%
+			max-width: 90%
+			max-height: 340px
+			bottom: 10px
+			top: auto
+			left: 0
+			right: 0
+			margin: auto
+		+medium-mobile
+			display: none
+
+	//contact-details list
+	ul.contact-details
+		li
+			color: #858585
+		a
+			color: $orange
+
+			&:hover
+				color: #000
+
+
+

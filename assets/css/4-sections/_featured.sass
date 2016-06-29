@@ -1,0 +1,67 @@
+section.featured
+	+large-desktop
+		font-size: 90%
+	+medium-handset
+		font-size: 110%
+	+medium-mobile
+		font-size: 95%
+
+	.grid-masonry
+		margin: auto
+		left: 0
+		right: 0
+		position: relative
+
+		.grid-sizer
+			width: 20%
+			+large-desktop
+				width: 25%
+			+large-tablet
+				width: 33.333%
+			+small-tablet
+				width: 50%
+			+medium-handset
+				width: 100%
+
+		.grid-item
+			display: block
+			width: 20%
+			float: left
+			padding: 0 5px 10px 5px
+			+large-desktop
+				width: 25%
+			+large-tablet
+				width: 33.333%
+			+small-tablet
+				width: 50%
+			+medium-handset
+				width: 100%
+
+		.grid-item--width2
+			width: 40%
+			+large-desktop
+				width: 25%
+			+large-tablet
+				width: 33.33%
+			+small-tablet
+				width: 100%
+			.featured-box
+				+medium-handset
+					height: 660px
+					.wrap
+						height: 200px
+				+medium-mobile
+					height: 280px
+					.wrap
+						height: 165px
+
+		.grid-item--height2 .featured-box
+			height: 750px
+			+large-desktop
+				height: 370px
+			+large-tablet
+				height: 750px
+			+medium-handset
+				height: 660px
+			+medium-mobile
+				height: 280px

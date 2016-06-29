@@ -1,0 +1,72 @@
+footer.site-footer
+    background-color: #2C2C2C
+    font-family: $pt_serif
+    color: #858585
+    padding: 60px 0 50px 0
+    +tablet
+        padding: 45px 0
+
+    p
+        font-size: 1.05em
+        margin-bottom: 0
+
+    h2
+        font-family: $oswald
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 1.1em
+        line-height: 1
+        color: #bcbcbc
+        margin-bottom: 25px
+
+
+    //span-left styles
+    .span-left
+
+        ul
+            display: table
+            width: 100%
+
+            li
+                width: 50%
+                display: block
+                float: left
+                margin-bottom: 5px
+                +medium-handset
+                    width: 100%
+
+                &:nth-child(2) p,
+                &:nth-child(3) p,
+                &:nth-child(5) p
+                    padding-left: 30px
+                    +tablet
+                        padding-left: 0
+
+
+    //span-middle styles
+    .span-middle
+
+        nav.footer-menu
+            ul
+                display: table
+                width: 100%
+
+                li
+                    width: 40%
+                    float: left
+                    margin-bottom: 17px
+                    display: block
+                    +medium-mobile
+                        width: 100%
+                        float: none
+
+                    a
+                        display: block
+                        font-size: 0.95em
+                        line-height: 1
+
+    //span-right
+    .span-right
+
+        p.copyright
+            font-size: 0.95em

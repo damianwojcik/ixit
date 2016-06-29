@@ -1,0 +1,63 @@
+//section featured
+section.featured
+
+	.container
+		width: 100%
+		padding: 0 5px
+		+small-tablet
+			padding: 0 25px
+		+medium-mobile
+			padding: 0 15px
+
+//section content
+section.content
+	+small-tablet
+		.row-tight
+			.span8,
+			.span4
+				width: 100%
+
+			.span8
+				margin-bottom: 10px
+
+//footer
+footer.site-footer .row-tight
+	.span6
+		width: 51.28%
+
+	.span4
+		width: 34.19%
+
+	.span2
+		width: 14.53%
+
+
+//responsive
++desktop
+	.container
+		width: 100%
+		padding: 0 30px
+
++tablet
+	footer.site-footer .row-tight
+		.span6
+			width: 100%
+			margin-bottom: 35px
+
+		.span4,
+		.span2
+			width: 50%
+
++medium-handset
+	footer.site-footer .row-tight
+		.span4,
+		.span2
+			width: 100%
+
+		.span4
+			margin-bottom: 35px
+
++medium-mobile
+	.container
+		padding: 0 20px
+

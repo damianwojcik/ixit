@@ -1,0 +1,30 @@
+aside.sidebar
+	padding-left: 10px
+	+medium-handset
+		font-size: 110%
+	+medium-mobile
+		font-size: 95%
+	+small-tablet
+		padding-left: 0
+
+	.row-tight
+		margin-bottom: 10px
+		+small-tablet
+			float: left
+			width: 50%
+		+medium-handset
+			float: none
+			width: 100%
+
+		&:first-child
+			+small-tablet
+				padding-right: 5px
+			+medium-handset
+				padding-right: 0
+
+		&:last-child
+			margin-bottom: 0
+			+small-tablet
+				padding-left: 5px
+			+medium-handset
+				padding-left: 0

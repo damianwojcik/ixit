@@ -1,0 +1,31 @@
+$nav-height: 80px
+
+a.mobile-nav-toggle
+	display: none
+	position: absolute
+	right: 0
+	height: $nav-height
+	padding: 20px 30px
+	float: right
+	+tablet
+		display: table
+	+medium-mobile
+		padding: 20px
+
+	.menu-bars
+		display: table-cell
+		vertical-align: middle
+
+		.menu-bar
+			display: block
+			width: 30px
+			height: 4px
+			background-color: $orange
+			+transition(all 0.4s ease)
+
+			&:nth-child(2)
+				margin: 5px 0
+
+	&:hover
+		.menu-bar
+			background-color: #000

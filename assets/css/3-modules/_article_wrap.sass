@@ -1,0 +1,93 @@
+article.article-wrap
+	background-color: #FFF
+	color: #000
+	padding: 45px
+	+small-tablet
+		padding: 30px
+	+mobile
+		font-size: 90%
+	+medium-mobile
+		padding: 20px
+
+	h1
+		color: #000
+		text-transform: uppercase
+		font-family: $oswald
+		font-size: 2.2em
+		line-height: 1.5
+		font-weight: normal
+		margin-bottom: 25px
+		+medium-mobile
+			font-size: 1.8em
+			margin-bottom: 15px
+
+		+medium-handset
+			br
+				display: none
+
+	h2
+		color: #000
+		text-transform: uppercase
+		font-family: $oswald
+		font-size: 1.4em
+		line-height: 1
+		font-weight: normal
+		margin-bottom: 30px
+
+	img
+		margin-bottom: 30px
+		+medium-mobile
+			margin-bottom: 20px
+	
+	p
+		color: #464646
+		font-size: 1.1em
+		line-height: 1.7
+		font-family: $pt_serif
+		+medium-mobile
+			line-height: 1.5
+			margin-bottom: 15px
+
+	a.circle-btn
+		margin-bottom: 45px
+		+medium-mobile
+			margin-bottom: 30px
+
+	//boxed buttons navigation
+	nav.boxed-buttons
+		ul li
+			width: 48%
+			float: left
+			display: table
+			text-align: center
+			+mobile
+				width: 100%
+
+			&:first-child
+				margin-right: 4%
+				+mobile
+					margin-right: 0
+					margin-bottom: 10px
+
+			a
+				display: table-cell
+				vertical-align: middle
+				+background_img
+				height: 125px
+				width: 100%
+				color: #FFF
+				text-transform: uppercase
+				font-family: $oswald
+				line-height: 1
+				font-size: 2.5em
+				font-weight: bold
+				+transition(all 0.4s ease-in-out)
+				z-index: 999
+				+medium-mobile
+					font-size: 1.8em
+
+				&:hover
+					-webkit-transform: scale(1.05)
+					transform: scale(1.05)
+
+				

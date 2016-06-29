@@ -1,0 +1,92 @@
+//move to lists or sth
+ul.large-tiles
+	padding: 0 10px
+	+tablet
+		padding: 0 30px
+	+medium-mobile
+		padding: 0 20px
+
+	li
+		display: table
+		width: 50%
+		float: left
+		+tablet
+			width: 100%
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+
+		.tile-large
+			display: block
+			width: 100%
+			height: 580px
+			position: relative
+			+transition(all 0.4s ease-in-out)
+			+background_img
+			+medium-handset
+				height: 400px
+			+medium-mobile
+				height: 330px
+
+			//hover state
+			&:hover
+				-webkit-transform: scale(1.05)
+				transform: scale(1.05)
+				.color-overlay
+					background-color: rgba(0,0,0,0.4)
+
+			.bordered-wrap
+				padding: 20px
+				width: 100%
+				height: inherit
+				display: table
+
+				.wrap
+					display: table-cell
+					vertical-align: middle
+					text-align: center
+					border: 3px solid #FFF
+
+					h2
+						color: #FFF
+						text-transform: uppercase
+						font-family: $oswald
+						font-weight: bold
+						font-size: 3.2em
+						line-height: 1.2
+						margin-bottom: 45px
+						margin-left: auto
+						margin-right: auto
+						width: 320px
+						+medium-handset
+							width: 90%
+						+mobile
+							font-size: 2.4em
+							margin-bottom: 30px
+						+medium-mobile
+							font-size: 2em
+
+
+					.btn
+						padding-top: 17px
+						padding-bottom: 17px
+
+		//left tile
+		&:first-child
+			padding-right: 5px
+			+tablet
+				padding-right: 0
+			.color-overlay
+				background-color: rgba(246, 130, 31, 0.8)
+			
+		//right tile
+		&:last-child
+			padding-left: 5px
+			+tablet
+				padding-left: 0
+			.color-overlay
+				background-color: rgba(127, 172, 195, 0.8)
+
+
+
+			

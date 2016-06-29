@@ -1,0 +1,106 @@
+//globals for buttons
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.btn
+  display: inline-block
+  padding: 17px 40px
+  background-color: #FFF
+  border-radius: 30px
+  text-transform: uppercase
+  color: $orange
+  text-align: center
+  font-size: 1em
+  line-height: 1
+  white-space: nowrap
+  cursor: pointer
+  box-sizing: border-box
+  font-family: $oswald
+  font-weight: bold
+  position: relative
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $orange
+    background-color: #FFF
+    outline: 0
+    text-decoration: none
+
+//btn with arrow
+.btn.btn-arrow-right
+  padding: 17px 20px 17px 40px
+
+  span
+    font-size: 18px
+    font-weight: bold
+    padding-left: 15px
+    line-height: 0.5
+    top: -1px
+    position: relative
+
+//circle buttons with arrows
+.circle-btn,
+a.circle-btn
+  color: $orange
+  border: 2px solid $orange
+  border-radius: 100%
+  display: inline-block
+  text-align: center
+  line-height: 40px
+  width: 36px
+  height: 36px
+  
+  span
+    font-size: 18px
+    font-weight: bold
+    display: inline-block
+    line-height: 1
+    position: relative
+    top: -4px
+    left: 1px
+  
+  &:hover
+    color: #FFF
+    background-color: $orange
+
+//adapt position of arrow left
+.circle-btn.circle-btn--left
+  span
+    left: 1px
+
+//adapt position of arrow right
+.circle-btn.circle-btn--right
+  span
+    left: 2px
+
+
+//three-dots button
+a.three-dots
+  text-align: center
+  border: 2px solid $orange
+  border-radius: 100%
+  width: 40px
+  height: 40px
+  padding: 0
+  margin: 0
+  display: inline-block
+  position: relative
+
+  &:hover
+    border-color: #FFF
+    span
+      color: #FFF
+
+  span
+    position: absolute
+    left: 4px
+    top: 0
+    color: $orange
+    font-size: 30px
+    font-weight: bold
+    line-height: 0.6
+    +transition( all 0.4s )
+

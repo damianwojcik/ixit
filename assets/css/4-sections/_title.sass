@@ -1,0 +1,117 @@
+section.title
+	display: table
+	width: 100%
+
+	.wrap
+		display: table-cell
+		vertical-align: middle
+		padding: 50px 30px
+		text-align: center
+		+medium-handset
+			padding: 45px 30px
+		+medium-mobile
+			padding: 40px 20px
+
+		h1,
+		h2
+			text-transform: uppercase
+			font-family: $oswald
+			line-height: 1.2
+
+		h1
+			font-weight: bold
+			font-size: 3.8em
+			margin-bottom: 0
+			+medium-handset
+				font-size: 2.8em
+			+medium-mobile
+				font-size: 2.5em
+
+			&:before
+				content: ''
+				display: inline-block
+				height: 50px
+				width: 10px
+				background-color: $orange
+				margin-right: 20px
+				+medium-handset
+					height: 37px
+				+medium-mobile
+					height: 33px
+					margin-right: 10px
+
+		.farb-wrap
+			display: table
+			margin: 0 auto
+			position: relative
+			background-image: url('assets/img/farb-bg.png')
+			+tablet
+				background-image: none
+
+			&:before,
+			&:after
+				content: ''
+				background-size: cover
+				background-repeat: no-repeat
+				position: absolute
+				top: 0
+				height: 58px
+
+			&:before
+				left: -86px
+				background-image: url('assets/img/farb-bg-before.png')
+				width: 86px
+				+tablet
+					background-image: none
+
+			&:after
+				right: -97px
+				background-image: url('assets/img/farb-bg-after.png')
+				width: 97px
+				+tablet
+					background-image: none
+
+			h2
+				font-weight: normal
+				display: table-cell
+				vertical-align: middle
+				font-size: 2.5em
+				padding: 0
+				background-size: contain
+				height: 58px
+				background-position: center
+				background-repeat: repeat-x
+				margin-bottom: 0
+				+large-tablet
+					font-size: 2em
+				+tablet
+					font-size: 1.7em
+				+mobile
+					font-size: 1.4em
+
+
+//styles for Title section on Home
+.home
+	section.title
+		.wrap
+			padding: 90px 30px 110px 30px
+			+large-tablet
+				padding: 80px 30px 100px 30px
+			+mobile
+				padding: 60px 30px 80px 30px
+			+medium-handset
+				padding: 50px 30px 60px 30px
+			+medium-mobile
+				padding: 40px 20px
+
+			h1
+				margin-bottom: 5px
+				+large-tablet
+					font-size: 3em
+				+mobile
+					font-size: 2.6em
+				+medium-mobile
+					font-size: 2.2em
+
+				&:before
+					display: none

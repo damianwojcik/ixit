@@ -1,0 +1,44 @@
+aside.mobile-navigation
+	display: none
+	position: relative
+	background: #E3E3E3
+
+	nav.mobile-menu
+		text-align: center
+
+		li
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+
+			&:last-child
+				border-bottom: 0
+
+			&.current-menu-item a
+				color: #292929
+
+			a
+				text-transform: uppercase
+				color: #868686
+				display: block
+				font-family: $oswald
+				font-size: 1.5em
+				line-height: 2em
+
+				&:hover
+					color: #292929
+					background-color: rgba(0, 0, 0, 0.05)
+
+			//language selection
+			ul.lang-select
+				width: 100%
+				display: table
+
+				li
+					width: 50%
+					float: left
+					text-align: center
+
+					&:first-child
+						border-right: 1px solid rgba(0, 0, 0, 0.1)
+
+					img
+						display: inline-block

@@ -1,0 +1,102 @@
+//Big bordered box styles
+.featured-box.featured-box--large
+	padding: 20px
+
+	.bordered-wrap
+		border: 2px solid #FFF
+		height: 100%
+		text-align: center
+		position: relative
+		padding: 40px 20px 25px 20px
+
+		.wrap
+			height: 195px
+			+medium-handset
+				height: 192px
+			+medium-mobile
+				height: 165px
+
+		.btn
+			padding: 17px 0
+			width: 85%
+			text-align: center
+			+medium-mobile
+				width: 100%
+
+			span
+				display: inline
+				padding-left: 5%
+
+	//Bricks img
+	#bricks
+		position: relative
+		max-width: 100%
+		max-height: 205px
+		left: 0
+		right: 0
+		margin: auto
+		+large-desktop
+			display: none
+		+large-tablet
+			display: block
+		+medium-handset
+			max-height: 175px
+		+medium-mobile
+			display: none
+
+//styles for featured-box-large on Home
+.home
+	.featured-box.featured-box--large
+		padding: 20px 20px 100px 20px
+		+large-desktop
+			padding: 20px
+		+large-tablet
+			padding: 20px 20px 100px 20px
+		+medium-handset
+			padding: 35px 35px 85px 35px
+		+medium-mobile
+			padding: 20px
+
+		.bordered-wrap
+			padding: 45px 20px
+			+large-desktop
+				padding: 40px 20px
+			+large-tablet
+				padding: 45px 20px
+			+medium-handset
+				padding: 30px 20px
+
+			.wrap
+				height: 330px
+				overflow: hidden
+				+large-desktop
+					height: 175px
+				+large-tablet
+					height: 340px
+				+medium-handset
+					height: 298px
+
+					h2
+						font-size: 2.9em !important
+						line-height: 1.2
+						width: 60%
+						margin: 0 auto 5px auto
+				+medium-mobile
+					height: 110px
+
+					h2
+						width: 90%
+
+			.btn
+				margin-bottom: 45px
+				+medium-handset
+					margin-bottom: 20px
+
+//styles for featured-box-large at Sidebar
+aside.sidebar
+	.featured-box.featured-box--large .bordered-wrap .wrap
+		+medium-handset
+			height: 140px
+		+medium-mobile
+			height: 110px
+
