@@ -42,31 +42,26 @@ footer.site-footer
                     +tablet
                         padding-left: 0
 
+//footer-menu
+nav.footer-menu
+    ul
+        display: table
+        width: 100%
 
-    //span-middle styles
-    .span-middle
-
-        nav.footer-menu
-            ul
-                display: table
+        li
+            width: 40%
+            float: left
+            margin-bottom: 17px
+            display: block
+            +medium-mobile
                 width: 100%
+                float: none
 
-                li
-                    width: 40%
-                    float: left
-                    margin-bottom: 17px
-                    display: block
-                    +medium-mobile
-                        width: 100%
-                        float: none
+            a
+                display: block
+                font-size: 0.95em
+                line-height: 1
 
-                    a
-                        display: block
-                        font-size: 0.95em
-                        line-height: 1
-
-    //span-right
-    .span-right
-
-        p.copyright
-            font-size: 0.95em
+//copyright
+p.copyright
+    font-size: 0.95em

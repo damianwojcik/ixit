@@ -24,72 +24,75 @@ header.site-header
 			img
 				padding: 28px 0
 
-	nav.primary-menu
-		float: right
+//WPML
+#lang_sel_click
+	float: right
+	display: table
+	padding: 20px 0 20px 30px
+	position: relative
+	+tablet
+		display: none
+
+	//BEGIN sublist styles
+	ul li ul
 		display: block
-		+tablet
-			display: none
-		ul
-			li
-				display: inline-block
-				&.current-menu-item a
-					color: #292929
-
-				a
-					display: block
-					color: #868686
-					text-transform: uppercase
-					font-size: 1.05em
-					padding: 32px 25px
-					line-height: 1
-
-					&:hover
-						color: #292929
-						background-color: rgba(0, 0, 0, 0.1)
-
-	#lang_sel_click
-		float: right
-		display: table
-		padding: 20px 0 20px 30px
-		position: relative
-		+tablet
-			display: none
-
-		//BEGIN sublist styles
-		ul li ul
-			display: block
-			position: absolute
-
-			.lang_sel_sel
-				border-radius: 0px
-				background-color: lime
-				text-align: left
-
-				img
-					padding-left: 14px
-		//END sublist-styles
+		position: absolute
 
 		.lang_sel_sel
-			display: table-cell
-			vertical-align: middle
-			height: 36px
-			width: 75px
-			border: 2px solid rgba(0, 0, 0, 0.1)
-			border-radius: 35px
-			padding: 6px 0
-			text-align: center
-
-			&:hover
-				border: 2px solid rgba(0, 0, 0, 0.4)
-				.chevron-down
-					color: rgba(0, 0, 0, 0.5)
+			border-radius: 0px
+			background-color: lime
+			text-align: left
 
 			img
-				display: inline-block
-
-			.chevron-down
-				color: rgba(0, 0, 0, 0.2)
-				display: inline-block
-				position: relative
-				top: -3px
 				padding-left: 14px
+	//END sublist-styles
+
+	.lang_sel_sel
+		display: table-cell
+		vertical-align: middle
+		height: 36px
+		width: 75px
+		border: 2px solid rgba(0, 0, 0, 0.1)
+		border-radius: 35px
+		padding: 6px 0
+		text-align: center
+
+		&:hover
+			border: 2px solid rgba(0, 0, 0, 0.4)
+			.chevron-down
+				color: rgba(0, 0, 0, 0.5)
+
+		img
+			display: inline-block
+
+		.chevron-down
+			color: rgba(0, 0, 0, 0.2)
+			display: inline-block
+			position: relative
+			top: -3px
+			padding-left: 14px
+
+//Primary navigation
+nav.primary-menu
+	float: right
+	display: block
+	+tablet
+		display: none
+	ul
+		li
+			display: inline-block
+			&.current-menu-item a
+				color: #292929
+
+			a
+				display: block
+				color: #868686
+				text-transform: uppercase
+				font-size: 1.05em
+				padding: 32px 25px
+				line-height: 1
+
+				&:hover
+					color: #292929
+					background-color: rgba(0, 0, 0, 0.1)
+

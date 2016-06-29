@@ -2,6 +2,52 @@ section.title
 	display: table
 	width: 100%
 
+	h1,
+	h2
+		text-transform: uppercase
+		font-family: $oswald
+		line-height: 1.2
+
+	h1
+		font-weight: bold
+		font-size: 3.8em
+		margin-bottom: 0
+		+medium-handset
+			font-size: 2.8em
+		+medium-mobile
+			font-size: 2.5em
+
+		&:before
+			content: ''
+			display: inline-block
+			height: 50px
+			width: 10px
+			background-color: $orange
+			margin-right: 20px
+			+medium-handset
+				height: 37px
+			+medium-mobile
+				height: 33px
+				margin-right: 10px
+
+	h2
+		font-weight: normal
+		display: table-cell
+		vertical-align: middle
+		font-size: 2.5em
+		padding: 0
+		background-size: contain
+		height: 58px
+		background-position: center
+		background-repeat: repeat-x
+		margin-bottom: 0
+		+large-tablet
+			font-size: 2em
+		+tablet
+			font-size: 1.7em
+		+mobile
+			font-size: 1.4em
+
 	.wrap
 		display: table-cell
 		vertical-align: middle
@@ -11,83 +57,38 @@ section.title
 			padding: 45px 30px
 		+medium-mobile
 			padding: 40px 20px
+	
 
-		h1,
-		h2
-			text-transform: uppercase
-			font-family: $oswald
-			line-height: 1.2
+	.farb-wrap
+		display: table
+		margin: 0 auto
+		position: relative
+		background-image: url('assets/img/farb-bg.png')
+		+tablet
+			background-image: none
 
-		h1
-			font-weight: bold
-			font-size: 3.8em
-			margin-bottom: 0
-			+medium-handset
-				font-size: 2.8em
-			+medium-mobile
-				font-size: 2.5em
+		&:before,
+		&:after
+			content: ''
+			background-size: cover
+			background-repeat: no-repeat
+			position: absolute
+			top: 0
+			height: 58px
 
-			&:before
-				content: ''
-				display: inline-block
-				height: 50px
-				width: 10px
-				background-color: $orange
-				margin-right: 20px
-				+medium-handset
-					height: 37px
-				+medium-mobile
-					height: 33px
-					margin-right: 10px
-
-		.farb-wrap
-			display: table
-			margin: 0 auto
-			position: relative
-			background-image: url('assets/img/farb-bg.png')
+		&:before
+			left: -86px
+			background-image: url('assets/img/farb-bg-before.png')
+			width: 86px
 			+tablet
 				background-image: none
 
-			&:before,
-			&:after
-				content: ''
-				background-size: cover
-				background-repeat: no-repeat
-				position: absolute
-				top: 0
-				height: 58px
-
-			&:before
-				left: -86px
-				background-image: url('assets/img/farb-bg-before.png')
-				width: 86px
-				+tablet
-					background-image: none
-
-			&:after
-				right: -97px
-				background-image: url('assets/img/farb-bg-after.png')
-				width: 97px
-				+tablet
-					background-image: none
-
-			h2
-				font-weight: normal
-				display: table-cell
-				vertical-align: middle
-				font-size: 2.5em
-				padding: 0
-				background-size: contain
-				height: 58px
-				background-position: center
-				background-repeat: repeat-x
-				margin-bottom: 0
-				+large-tablet
-					font-size: 2em
-				+tablet
-					font-size: 1.7em
-				+mobile
-					font-size: 1.4em
+		&:after
+			right: -97px
+			background-image: url('assets/img/farb-bg-after.png')
+			width: 97px
+			+tablet
+				background-image: none
 
 
 //styles for Title section on Home

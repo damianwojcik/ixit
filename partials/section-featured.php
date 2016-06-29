@@ -20,7 +20,7 @@
 
 			<div class="grid-sizer"></div>
 
-			<div class="grid-item">
+			<div class="grid-item" id="item1">
 
 				<a href="<?php echo get_page_link(40); ?>" class="featured-box">
 
@@ -43,7 +43,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item grid-item--width2">
+			<div class="grid-item grid-item--width2" id="item2">
 
 				<a href="<?php echo get_page_link(42); ?>" class="featured-box featured-box--black"">
 
@@ -73,7 +73,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item grid-item--height2">
+			<div class="grid-item grid-item--height2" id="item3">
 
 				<a href="<?php echo $page_bricks_system; ?>" class="featured-box featured-box--large" style="background-image: url('<?= THEME_URL; ?>/assets/img/service.jpg')">
 
@@ -105,7 +105,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item">
+			<div class="grid-item" id="item4">
 
 				<a href="<?php echo $realization_1_link; ?>" class="featured-box" style="background-image: url('<?= THEME_URL; ?>/assets/img/realization-2.jpg')">
 
@@ -130,7 +130,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item">
+			<div class="grid-item" id="item5">
 
 				<a href="<?php echo $realization_2_link; ?>" class="featured-box" style="background-image: url('<?= THEME_URL; ?>/assets/img/realization-1.jpg')">
 
@@ -151,7 +151,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item">
+			<div class="grid-item" id="item6">
 
 				<div class="featured-box">
 
@@ -179,7 +179,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item">
+			<div class="grid-item" id="item7">
 
 				<a href="<?php echo $page_contact; ?>" class="featured-box" style="background-image: url('<?= THEME_URL; ?>/assets/img/map.jpg')">
 
@@ -200,7 +200,7 @@
 			</div>
 			<!-- END grid-item -->
 
-			<div class="grid-item">
+			<div class="grid-item" id="item8">
 
 				<a href="#" class="featured-box" style="background-image: url('<?= THEME_URL; ?>/assets/img/facebook-bg.jpg')">
 					

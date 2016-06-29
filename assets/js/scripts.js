@@ -45,4 +45,22 @@ jQuery(document).ready(function($){
     }
 
 
+    //change order of Grid Items on Responsive
+    if ($(window).width() < 960) {
+    	$("#item4").insertAfter("#item1");
+    }
+
+
+    //change background-size depending on page height
+    if ($('.site-main').height() > 900) {
+    	$('.site-main').css({
+    		"background-size": "contain", 
+    	})
+    } else{
+    	$('.site-main').css({
+    		"background-size": "cover", 
+    	})
+    }
+    
+
 });
